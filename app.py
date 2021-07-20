@@ -1,9 +1,9 @@
 from flask import Flask
+from init_db import *
+from view import *
+
 app = Flask(__name__)
 
-@app.route('/')
-def good():
-    return 'ok'
 
 if __name__ == '__main__':
     app.run(debug=True)
